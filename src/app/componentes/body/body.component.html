@@ -1,0 +1,237 @@
+<header class="masthead" id="home">
+    <div class="container h-100">
+        <div class="row h-100">
+            <div class="col-lg-5 my-auto">
+                <div class="header-content mx-auto">
+
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="./assets/img/imgTec1.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Productos de tecnologia</h5>
+                            <a (click)="estadoCon1 = true"
+                                (click)="estadoCon2 = false || estadoCon3 = false || estadoImg = false"
+                                class="btn btn-primary text-white">Ver productos</a>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="./assets/img/imgHogar.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Productos para el hogar</h5>
+                            <a (click)="estadoCon2 = true"
+                                (click)="estadoCon1 = false || estadoCon3 = false || estadoImg = false"
+                                class="btn btn-primary text-white">Ver productos</a>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="./assets/img/imgComidas.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Comidas</h5>
+                            <a (click)="estadoCon3 = true"
+                                (click)="estadoCon1 = false || estadoCon2 = false || estadoImg = false"
+                                class="btn btn-primary text-white">Ver productos</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-7 my-auto">
+                <div *ngIf="estadoImg" class="device-container">
+                    <img class="d-block w-100" src="./assets/img/imgCompras.jpg" alt="First slide">
+                </div>
+                <div *ngIf="estadoCon1" class="device-container">
+
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="card" style="width: 18rem;">
+                                <img src="./assets/img/imgCel.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">iPhone 6s 32GB</h5>
+                                    <p *ngIf="estadoTxt1" class="card-text">Some quick example text to build on
+                                        the card
+                                        title and make up
+                                        the bulk of the card's content.</p>
+                                    <a (click)="estadoTxt1 = !estadoTxt1" class="btn btn-primary text-white">Mas
+                                        informacion</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card" style="width: 18rem;">
+                                <img src="./assets/img/imgTel.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Televisor Samsung</h5>
+                                    <p *ngIf="estadoTxt2" class="card-text">Some quick example text to build on
+                                        the card
+                                        title and make up
+                                        the bulk of the card's content.</p>
+                                    <a (click)="estadoTxt2 = !estadoTxt2" class="btn btn-primary text-white">Mas
+                                        informacion</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="card" style="width: 18rem;">
+                                <img src="./assets/img/imgTab.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Galaxy Tab s3 9.7"</h5>
+                                    <p *ngIf="estadoTxt3" class="card-text">Some quick example text to build on
+                                        the card
+                                        title and make up
+                                        the bulk of the card's content.</p>
+                                    <a (click)="estadoTxt3 = !estadoTxt3" class="btn btn-primary text-white">Mas
+                                        informacion</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card" style="width: 18rem;">
+                                <img src="./assets/img/imgComp.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Computador portatil ASUS</h5>
+                                    <p *ngIf="estadoTxt4" class="card-text">Some quick example text to build on
+                                        the card
+                                        title and make up
+                                        the bulk of the card's content.</p>
+                                    <a (click)="estadoTxt4 = !estadoTxt4" class="btn btn-primary text-white">Mas
+                                        informacion</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div *ngIf="estadoCon2" class="device-container">
+
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="card" style="width: 18rem;">
+                                <img src="./assets/img/imgSof.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Sofá</h5>
+                                    <p *ngIf="estadoTxt1" class="card-text">Some quick example text to build on
+                                        the card
+                                        title and make up
+                                        the bulk of the card's content.</p>
+                                    <a (click)="estadoTxt1 = !estadoTxt1" class="btn btn-primary text-white">Mas
+                                        informacion</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card" style="width: 18rem;">
+                                <img src="./assets/img/imgCam.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Cama</h5>
+                                    <p *ngIf="estadoTxt2" class="card-text">Some quick example text to build on
+                                        the card
+                                        title and make up
+                                        the bulk of the card's content.</p>
+                                    <a (click)="estadoTxt2 = !estadoTxt2" class="btn btn-primary text-white">Mas
+                                        informacion</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="card" style="width: 18rem;">
+                                <img src="./assets/img/imgArm.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Armario</h5>
+                                    <p *ngIf="estadoTxt3" class="card-text">Some quick example text to build on
+                                        the card
+                                        title and make up
+                                        the bulk of the card's content.</p>
+                                    <a (click)="estadoTxt3 = !estadoTxt3" class="btn btn-primary text-white">Mas
+                                        informacion</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card" style="width: 18rem;">
+                                <img src="./assets/img/imgCome.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Comedor</h5>
+                                    <p *ngIf="estadoTxt4" class="card-text">Some quick example text to build on
+                                        the card
+                                        title and make up
+                                        the bulk of the card's content.</p>
+                                    <a (click)="estadoTxt4 = !estadoTxt4" class="btn btn-primary text-white">Mas
+                                        informacion</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div *ngIf="estadoCon3" class="device-container">
+
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="card" style="width: 18rem;">
+                                <img src="./assets/img/imgHog.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Hog Dog</h5>
+                                    <p *ngIf="estadoTxt1" class="card-text">Some quick example text to build on
+                                        the card
+                                        title and make up
+                                        the bulk of the card's content.</p>
+                                    <a (click)="estadoTxt1 = !estadoTxt1" class="btn btn-primary text-white">Mas
+                                        informacion</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card" style="width: 18rem;">
+                                <img src="./assets/img/imgHam.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Hamburguesa</h5>
+                                    <p *ngIf="estadoTxt2" class="card-text">Some quick example text to build on
+                                        the card
+                                        title and make up
+                                        the bulk of the card's content.</p>
+                                    <a (click)="estadoTxt2 = !estadoTxt2" class="btn btn-primary text-white">Mas
+                                        informacion</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="card" style="width: 18rem;">
+                                <img src="./assets/img/imgPiz.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Pizza</h5>
+                                    <p *ngIf="estadoTxt3" class="card-text">Some quick example text to build on
+                                        the card
+                                        title and make up
+                                        the bulk of the card's content.</p>
+                                    <a (click)="estadoTxt3 = !estadoTxt3" class="btn btn-primary text-white">Mas
+                                        informacion</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card" style="width: 18rem;">
+                                <img src="./assets/img/imgSal.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Salchipapas</h5>
+                                    <p *ngIf="estadoTxt4" class="card-text">Some quick example text to build on
+                                        the card
+                                        title and make up
+                                        the bulk of the card's content.</p>
+                                    <a (click)="estadoTxt4 = !estadoTxt4" class="btn btn-primary text-white">Mas
+                                        informacion</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
